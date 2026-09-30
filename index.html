@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#090b16"><title>For Dardoura 🤍</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stars"></div><div class="grain"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+<button id="musicBtn" class="music-float">♪ <span>music</span></button>
+<main>
+<section id="intro" class="scene active center">
+  <div class="intro-moon"></div><p class="eyebrow">a little world made for you</p>
+  <h1>Hey, <em>Dorra</em><span>...</span></h1>
+  <p class="lead">I could've just said “happy birthday”.<br>But that felt way too easy.</p>
+  <button id="enter" class="primary">Come in <b>✦</b></button>
+  <p class="micro">turn the sound on for the full little surprise ♫</p>
+</section>
+
+<section id="door" class="scene center">
+  <div class="door-art"><div class="door-light"></div><div class="door-star">✦</div><div class="door-handle"></div></div>
+  <p class="eyebrow">chapter one</p><h2>Before you enter...</h2>
+  <p class="soft">Leave the ordinary outside for a minute.<br>This little place belongs to Dardoura tonight.</p>
+  <button class="primary next" data-next="room">open the door →</button>
+</section>
+
+<section id="room" class="scene">
+ <div class="room">
+  <div class="window"><div class="moon"></div><i></i><i></i><i></i><i></i><div class="curtain l"></div><div class="curtain r"></div></div>
+  <div class="shelf">♡　✦　♡</div><button id="lamp" class="lamp"><span></span></button>
+  <div class="plant"><i></i><i></i><i></i><i></i><b></b></div>
+  <div class="table"><div class="cake-small"><i></i><i></i><i></i></div><button id="roomGift" class="gift-small">🎁</button><button id="roomCard" class="card-small">for<br><b>Dardoura</b></button></div>
+  <div class="balloons"><button data-text="You look good in every kind of happy.">●</button><button data-text="Today is officially a smile-more day.">●</button><button data-text="You found me. Now keep exploring. ✦">●</button></div>
+  <div class="room-text"><p class="eyebrow">chapter two · your room</p><h2>Happy Birthday,<br><em>Dardoura</em> 🤍</h2><p>Tap the little things. Some of them have something to tell you.</p></div>
+ </div>
+ <button class="primary next room-next" data-next="letter">I found everything →</button><div id="toast"></div>
+</section>
+
+<section id="letter" class="scene center paper-scene">
+ <div class="paper"><p class="eyebrow">chapter three · a note</p><h2>For you, before anything else.</h2>
+ <p>There are people you meet and forget.<br>There are people who stay in your thoughts a little longer.</p>
+ <p>So today, instead of a normal birthday message, I wanted to make you a tiny place you could visit and keep for a while.</p>
+ <p class="signature">— for Dardoura 🤍</p></div>
+ <button class="primary next" data-next="notes">keep reading →</button>
+</section>
+
+<section id="notes" class="scene center">
+ <p class="eyebrow">chapter four · tiny reminders</p><h2>Open them one by one.</h2><p class="soft">No rush. There are six.</p>
+ <div class="notes-grid">
+  <button class="note"><small>01</small><b>open</b><span>You deserve days that feel lighter than yesterday.</span></button>
+  <button class="note"><small>02</small><b>open</b><span>Your smile can change the mood of a whole room.</span></button>
+  <button class="note"><small>03</small><b>open</b><span>Ordinary moments can become your favorite memories.</span></button>
+  <button class="note"><small>04</small><b>open</b><span>You don't have to be perfect to be special.</span></button>
+  <button class="note"><small>05</small><b>open</b><span>I hope life surprises you in beautiful ways.</span></button>
+  <button class="note"><small>06</small><b>open</b><span>And yes... today, you are allowed to be spoiled. 🎀</span></button>
+ </div>
+ <p id="noteStatus" class="status">0 / 6 opened</p><button id="notesNext" class="primary hidden">there's another chapter →</button>
+</section>
+
+<section id="question" class="scene center">
+ <div class="heart-orb">♡</div><p class="eyebrow">chapter five · be honest</p><h2>Which one sounds most like you?</h2>
+ <div class="choices"><button data-answer="soft">“I pretend I don't care, but I actually care a lot.”</button><button data-answer="chaos">“I'm calm... until I'm absolutely not.”</button><button data-answer="sun">“I just want good people and good moments.”</button></div>
+ <p id="questionResult" class="result"></p><button id="questionNext" class="primary hidden">okay, one more →</button>
+</section>
+
+<section id="memories" class="scene center">
+ <p class="eyebrow">chapter six · little memories</p><h2>Imagine these as future memories.</h2>
+ <div class="memory-list"><div><span>✦</span><p>laughing until your stomach hurts</p></div><div><span>☾</span><p>a late-night conversation you don't want to end</p></div><div><span>♡</span><p>random pictures that make you smile months later</p></div><div><span>✧</span><p>a day you didn't expect to become special</p></div></div>
+ <p class="soft">Some of the best moments are the ones nobody plans.</p><button class="primary next" data-next="wish">save a little wish →</button>
+</section>
+
+<section id="wish" class="scene center">
+ <div class="big-cake"><div class="tier one"></div><div class="tier two"></div><i></i><i></i><i></i><i></i><i></i></div>
+ <p class="eyebrow">chapter seven · make a wish</p><h2>Close your eyes for a second.</h2><p class="soft">Think of one thing you really want this year.</p>
+ <button id="wishBtn" class="primary">make the wish ✦</button><p id="wishResult" class="result"></p>
+</section>
+
+<section id="gift" class="scene center">
+ <p class="eyebrow">chapter eight · one last surprise</p><h2>Okay... this one is actually for you.</h2>
+ <button id="bigGift" class="big-gift"><div class="lid"></div><div class="box"></div><div class="ribbon-v"></div><div class="ribbon-h"></div><span>✦</span></button>
+ <p id="giftHint" class="soft">tap the gift</p>
+ <div id="giftMsg" class="gift-msg hidden"><p class="eyebrow">inside</p><h3>The best part isn't in the box.</h3><p>It's all the moments you haven't lived yet.</p><p class="soft">And I hope there are a lot of beautiful ones waiting for you. 🤍</p><button id="finalBtn" class="primary">open the final page →</button></div>
+</section>
+
+<section id="final" class="scene center final">
+ <div class="final-moon"></div><p class="eyebrow">for Dardoura, always</p><h2>Happy Birthday, <em>Dorra.</em></h2>
+ <div id="finalText" class="final-text"><p>Today isn't just another date.</p><p>It's a reminder that the world got a little brighter because you arrived in it.</p><p>I hope this new year gives you reasons to laugh for no reason, people who make you feel safe, and memories you never want to delete.</p><p>I hope you get closer to everything you dream about.</p><p>And whenever life gets heavy, I hope you remember that there are still soft days ahead.</p><p class="last">Happy Birthday, Dardoura. 🤍</p></div>
+ <div id="ending" class="ending hidden"><span>✦</span><p>Made especially for you.</p><small>your tiny birthday world</small><button id="replay" class="ghost">experience it again ↻</button></div>
+</section>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-card"><button id="close">×</button><p class="eyebrow">little secret</p><h3 id="modalText"></h3></div></div>
+<audio id="music" loop preload="auto" src="./assets/music.mp3"></audio>
+<script src="script.js"></script>
+</body></html>
